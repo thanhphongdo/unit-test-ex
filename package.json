@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "nyc --reporter=lcov --reporter=text mocha --recursive --exit",
-    "test-ex": "mocha './test/auth.spec.js'",
-    "test-api": "mocha './test/api/user.spec.js'"
+    "test-ex": "mocha './test/auth.spec.js' --recursive --exit",
+    "test-api": "mocha './test/api/user.spec.js' --recursive --exit"
   },
   "dependencies": {
     "axios": "^0.21.1",
