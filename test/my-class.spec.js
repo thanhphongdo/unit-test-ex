@@ -5,7 +5,7 @@ const sinon = require('sinon');
 
 const myObj = new MyClass();
 
-describe('test MyClass', () => {
+describe.skip('test MyClass', () => {
     it('test add method', () => {
         expect(myObj.add(1, 2)).equal(3);
     });

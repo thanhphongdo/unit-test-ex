@@ -6,7 +6,7 @@ const fs = require('fs');
 const nock = require('nock');
 var auth = new Auth();
 
-describe("Auth Service", () => {
+describe.skip("Auth Service", () => {
     describe.skip("Login Function", () => {
         it("Login with username is null", () => {
             const result = auth.login(null, '12345678');
