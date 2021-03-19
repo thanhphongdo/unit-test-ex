@@ -1,0 +1,32 @@
+{
+  "name": "example-1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "test-ex": "mocha './test/auth.spec.js'"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.3.2",
+    "morgan": "~1.9.1",
+    "nock": "^13.0.11"
+  },
+  "devDependencies": {
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  },
+  "nyc": {
+    "include": "services",
+    "exclude": "test"
+  }
+}
